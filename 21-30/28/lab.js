@@ -1,11 +1,11 @@
 let k = prompt('Qani hat tiv pti ?');
 let arr = [];
 let z = 0;
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	let x = Math.floor(Math.random()*10);
 	arr[i] = x;
 }
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	if(i%2==1 && arr[i]>(arr[0]+arr[k-1]) ){
 		z+=arr[i];
 		console.log(arr[i]);
@@ -14,7 +14,7 @@ for(i=0; i<k; i++){
 }
 //test
 let abb = [];
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	if(i%2==1 && i!=k-1){
 		abb.push('↓');
 	}else {

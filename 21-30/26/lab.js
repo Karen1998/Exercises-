@@ -4,7 +4,7 @@ let z_1 = 0;
 let arr = [];
 let abb = [];
 let number = 0;
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	let x = Math.floor(Math.random()*100);
 	arr[i] = x;
 	number = i;
@@ -26,7 +26,7 @@ function foo () {
 	document.write('Tver - ' + arr + '<br />');
 	document.write('Tveri gumar@ minchev arajin zuig tiv@ - ' + z);
 }
-for(i=0; i<arr.length; i++){
+for(let i=0; i<arr.length; i++){
 	if(arr[i]%2==1){
 		abb.push(arr[i]);
 	}

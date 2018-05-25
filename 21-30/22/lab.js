@@ -2,14 +2,14 @@ let k = prompt('Mut areq massivi erkarutyn@');
 let z = 0;
 let j = 0;
 let arr = []
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	let x = Math.round(Math.random()*100);
 	if(x==0){
 		x+1;
 	}
 	arr[i] = x;
 }
-for(i=1; i<k-1; i++){
+for(let i=1; i<k-1; i++){
 	if(arr[i]%arr[0]==0){
 		z+=1;
 	}

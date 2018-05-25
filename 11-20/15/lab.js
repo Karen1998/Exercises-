@@ -8,25 +8,25 @@ function foo () {
 		let three = 0;
 		let all = 0;
 		let h = Math.floor(Math.random()*3) + 3;// 5 - 3 mijakaiq
-		for(i=0; i<k; i++){
+		for(let i=0; i<k; i++){
 			let x = Math.floor(Math.random()*7)+4;//4-ic 10
 			arr[i] = x;
 			all+=1;
 		}
-		for(i=0; i<k-25; i++){
+		for(let i=0; i<k-25; i++){
 			let x = Math.floor(Math.random()*((k-1)-0+1))+0;
 			arr[x] = 3;
 		}
-		for(i=0; i<k-20; i++){
+		for(let i=0; i<k-20; i++){
 			let x = Math.floor(Math.random()*((k-1)-0+1))+0;
 			arr[x] = 2;
 		}
-		for(i=0; i<h; i++){
+		for(let i=0; i<h; i++){
 			let x  = Math.floor(Math.random()*((k-1)-0+1))+0;
 			arr[x] = 1;
 			one+=1;
 		}
-		for(i=0; i<k; i++){
+		for(let i=0; i<k; i++){
 			if(arr[i]==3){
 				three+=1;
 			}else if(arr[i]==2){

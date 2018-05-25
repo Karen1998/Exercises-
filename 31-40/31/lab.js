@@ -1,10 +1,19 @@
 let k = prompt('Qani tiv tpi ?');
 let arr = [];
-for(i=0; i<k; i++){
+let sum = 0;
+let y = 1;
+for(let i=0; i<k; i++){
 	let x = Math.floor(Math.random()*10);
 	arr[i] = x;
+	sum += x;
 }
-for(i=k-2; i>=0; i--){
-	z+=arr[k-1]+arr[i];
+let j = k-1;
+let h = k-2;
+let z = arr[j];
+for(let i=h; i>=0; i--){
+	z += arr[i];
+	y *= z;
 }
-///////////////35%
+let answer = arr[j]*y;
+document.write('Tver - ' + arr + '<br />');
+document.write('Patasxan - ' + answer);

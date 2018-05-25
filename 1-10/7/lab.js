@@ -7,7 +7,7 @@ let sum;
 let arr = [a,b];
 let x = 0;
 let y =1;
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	a = parseInt(a);
 	b = parseInt(b);
 	arr[x] = parseInt(arr[x]);

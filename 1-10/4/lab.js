@@ -4,7 +4,7 @@ let x = prompt('Minchev vor tiv@?');
 // let a_2 = d + a_1;
 let arr = [];
 
-for(i=0; i<x; i++){
+for(let i=0; i<x; i++){
 	arr.push(a_1);
 	d=parseInt(d);
 	a_1=parseInt(a_1);

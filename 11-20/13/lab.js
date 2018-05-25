@@ -1,7 +1,7 @@
 let arr = [];
 let k = prompt('Qani angam cikl@ fra?');
 
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	let exp = Math.round(Math.random()*10);
 	if(exp != 1) arr[i] = exp;
 	if(exp == 1) arr[i] = exp + 1;

@@ -1,7 +1,7 @@
 let k = prompt('Mut areq massivi erkarutyn@');
 let z = 0;
 let arr = [];
-for(i=0; i<k; i++){
+for(let i=0; i<k; i++){
 	let x = Math.round(Math.random()*100);
 	arr[i] = x;
 	if(i%2==0){

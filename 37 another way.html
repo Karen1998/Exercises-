@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		var closestLeft,closestRight,current;;
+		let number = prompt("barev");
+		let data = [];
+		for(let i = 0; i<number; i++){
+			let x = Math.floor(Math.random()*30);
+			data[i]=x;
+		}
+		for (var i = 0; i < data.length; i++) {
+   			current = data[i];
+    	if (current < number && (typeof closestLeft === 'undefined' || closestLeft < current)) {
+    	    closestLeft = current;
+    	} else if (current > number && (typeof closestRight === 'undefined' || closestRight > current)) {
+    	    	closestRight = current;
+    		}
+		}
+		console.log(number);
+		console.log(data);
+		console.log(closestRight);
+		console.log(closestLeft);
+	</script>
+</html>
